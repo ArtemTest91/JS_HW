@@ -1,7 +1,7 @@
 // Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 let age;
 function check_2(age) {
-    if (isNaN (age)) {
+    if (!age.trim() || isNaN(age)) {
         console.log ("Введите число");
     } else if (age < 18) {
         console.log ("You don’t have access cause your age is " + age + " It’s less then");
