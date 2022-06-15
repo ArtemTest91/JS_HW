@@ -6,7 +6,7 @@
 <script> 
 let age = prompt ('Сколько тебе лет?', 18);
 function check_3(age) {
-    if (isNaN (age)) {
+    if (!age.trim() || isNaN(age)) {
         alert ("Введите число");
     } else if (age < 18) {
         alert ("You don’t have access cause your age is " + age + " It’s less then");
